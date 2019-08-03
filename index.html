@@ -12,7 +12,7 @@ function do_search()
  $.ajax
  ({
   type:'post',
-  url:'get_results.php',
+  url:'search.php',
   data:{
    search:"search",
    search_term:search_term
@@ -31,7 +31,7 @@ function do_search()
 <div id="wrapper">
 
 <div id="search_box">
- <form method="post"action="get_results.php" onsubmit="return do_search();">
+ <form method="post"action="search.php" onsubmit="return do_search();">
   <input type="text" id="search_term" name="search_term" placeholder="Enter Search" onkeyup="do_search();">
   <input type="submit" name="search" value="SEARCH">
  </form>
