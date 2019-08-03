@@ -1,11 +1,4 @@
 
-CREATE TABLE `search` (
- `title` text NOT NULL,
- `description` text NOT NULL,
- `link` text NOT NULL,
- FULLTEXT KEY ('title','description')
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1
-
 <?php
 if(isset($_POST['search']))
 {
